@@ -6,6 +6,21 @@ Your professional presence in a single URL: a polished **public portfolio**, an 
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/r10d1nsec/open-CV-Web&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY,SUPABASE_SERVICE_ROLE_KEY,NEXT_PUBLIC_SITE_URL&envDescription=Supabase%20keys%20and%20your%20public%20site%20URL)
 
+## Screenshots
+
+![Public portfolio](./docs/screenshots/portfolio.jpg)
+
+<table>
+  <tr>
+    <td width="62%"><img src="./docs/screenshots/landing.jpg" alt="Landing page" /></td>
+    <td width="38%"><img src="./docs/screenshots/card.jpg" alt="Mobile digital card" /></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Landing</sub></td>
+    <td align="center"><sub>Digital card (mobile)</sub></td>
+  </tr>
+</table>
+
 ## Features
 
 - **Public portfolio** `/<username>` — hero, skills, experience, projects (with images + links), services, testimonials, contact. Per-profile theming (accent color, font, section order/visibility).

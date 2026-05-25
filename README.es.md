@@ -6,6 +6,21 @@ Tu presencia profesional en una sola URL: un **portfolio público** cuidado, una
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/r10d1nsec/open-CV-Web&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY,SUPABASE_SERVICE_ROLE_KEY,NEXT_PUBLIC_SITE_URL&envDescription=Claves%20de%20Supabase%20y%20la%20URL%20publica%20de%20tu%20sitio)
 
+## Capturas
+
+![Portfolio público](./docs/screenshots/portfolio.jpg)
+
+<table>
+  <tr>
+    <td width="62%"><img src="./docs/screenshots/landing.jpg" alt="Landing" /></td>
+    <td width="38%"><img src="./docs/screenshots/card.jpg" alt="Tarjeta digital móvil" /></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Landing</sub></td>
+    <td align="center"><sub>Tarjeta digital (móvil)</sub></td>
+  </tr>
+</table>
+
 ## Funcionalidades
 
 - **Portfolio público** `/<usuario>` — hero, skills, experiencia, proyectos (con imágenes + enlaces), servicios, testimonios, contacto. Personalización por perfil (color de acento, fuente, orden y visibilidad de secciones).
