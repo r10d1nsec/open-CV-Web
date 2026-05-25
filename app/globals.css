@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Folio design system — sourced from design/_extract/styles.css */
+@import url('../styles/design-system.css');
+@import url('../styles/portfolio-responsive.css');
+@import url('../styles/booking-responsive.css');
+@import url('../styles/auth.css');
+
+/* Global resets that apply outside the .fol scope (root html/body). */
+html, body { margin: 0; padding: 0; min-height: 100%; background: var(--bg); color: var(--text); }
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'ss01', 'ss02', 'cv11';
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.005em;
+}
+/* Make the .fol-scoped tokens (buttons, cards, pills, inputs) work site-wide */
+body { /* mirror minimal box-sizing reset */ }
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Smooth theme transitions */
+html { transition: background-color .2s ease, color .2s ease; }

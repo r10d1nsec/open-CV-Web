@@ -1,0 +1,49 @@
+/* Portfolio responsive — colapsa a layout mobile a ≤ 768px.
+ * Replica el artboard portfolio-mobile del diseño con un solo render.
+ * Las pantallas de Sprint 0 usan inline styles (port del JSX original);
+ * estas media queries las sobrescriben en mobile usando clases conocidas.
+ */
+
+@media (max-width: 768px) {
+  /* Nav: oculta links centrales, compacta padding */
+  .portfolio-nav { padding: 10px 16px !important; }
+  .portfolio-nav-links { display: none !important; }
+  .portfolio-nav-avail { display: none !important; }
+
+  /* Hero: tipografía y padding más pequeños */
+  .portfolio-hero { padding: 28px 22px 28px !important; }
+  .portfolio-hero-h1 { font-size: 32px !important; line-height: 1.1 !important; letter-spacing: -0.025em !important; }
+  .portfolio-hero-stats { grid-template-columns: 1fr !important; }
+  .portfolio-hero-stats > div { border-left: none !important; border-top: 1px solid var(--border); }
+  .portfolio-hero-stats > div:first-child { border-top: none; }
+
+  /* Sections: single column */
+  .portfolio-section { padding: 32px 22px !important; }
+  .portfolio-section-grid { grid-template-columns: 1fr !important; gap: 18px !important; }
+  .portfolio-skill-row { grid-template-columns: 1fr !important; gap: 8px !important; }
+  .portfolio-exp-row { grid-template-columns: 1fr !important; gap: 8px !important; padding: 16px 0 !important; }
+  .portfolio-exp-head { flex-wrap: wrap; }
+
+  /* Projects: 1 column */
+  .portfolio-projects-grid { grid-template-columns: 1fr !important; gap: 14px !important; }
+
+  /* Booking teaser: stack */
+  .portfolio-booking-card { grid-template-columns: 1fr !important; padding: 24px !important; gap: 24px !important; }
+
+  /* Contact: stack */
+  .portfolio-contact-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+  .portfolio-contact-name-row { grid-template-columns: 1fr !important; }
+
+  /* Footer */
+  .portfolio-footer { padding: 18px 22px !important; flex-direction: column; gap: 8px; align-items: flex-start !important; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .portfolio-hero { padding: 56px 36px 48px !important; }
+  .portfolio-hero-h1 { font-size: 48px !important; }
+  .portfolio-section { padding: 48px 36px !important; }
+  .portfolio-projects-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .portfolio-section-grid { grid-template-columns: 180px 1fr !important; gap: 32px !important; }
+  .portfolio-nav { padding: 12px 36px !important; }
+  .portfolio-footer { padding: 20px 36px !important; }
+}
